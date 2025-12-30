@@ -50,4 +50,7 @@
 - (void)nativeExpressAdDidClose:(nonnull id)nativeExpressView {
     [self.adStatusBridge atOnAdClosed:nil];
 }
+- (void)nativeExpressAdDidExposured:(id)nativeExpressView{
+    [self.adStatusBridge atOnAdShow:nil];
+}
 @end

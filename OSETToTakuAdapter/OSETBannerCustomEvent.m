@@ -32,9 +32,12 @@
         [view removeFromSuperview];
     }
 }
+- (void)bannerDidExposures:(id)banner{
+    [self.adStatusBridge atOnAdShow:nil];
+
+}
 -(void)bannerDidClick:(id)bannerView{
     [self.adStatusBridge atOnAdClick:nil];
-
 }
 -(void)dealloc{
 }
